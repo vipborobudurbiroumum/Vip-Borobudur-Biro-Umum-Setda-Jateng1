@@ -73,18 +73,24 @@
       color: var(--primary);
     }
 
-    /* horizontal scroll */
     .gallery {
       display: flex;
       overflow-x: auto;
       gap: 12px;
       scroll-snap-type: x mandatory;
       padding-bottom: 10px;
+      align-items: center;
+    }
+
+    .gallery video {
+      height: 240px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      scroll-snap-align: center;
     }
 
     .gallery img {
       height: 180px;
-      width: auto;
       border-radius: 8px;
       flex-shrink: 0;
       scroll-snap-align: center;
@@ -96,7 +102,6 @@
       transform: scale(1.05);
     }
 
-    /* modal */
     .modal {
       display: none;
       position: fixed;
@@ -174,6 +179,7 @@
 <section id="ruangan">
   <h2>Galeri Ruangan</h2>
 
+  <!-- CONTOH SECTION (SEMUA SECTION POLANYA SAMA) -->
   <div class="room-section">
     <h3 class="room-title">Bangunan Utama</h3>
     <div class="gallery">
@@ -191,6 +197,9 @@
   <div class="room-section">
     <h3 class="room-title">Lobby</h3>
     <div class="gallery">
+      <video controls>
+        <source src="IMG/Lobby1.mp4" type="video/mp4">
+      </video>
       <img src="IMG/Lobby 1.jpg" onclick="openModal(this.src)">
       <img src="IMG/Lobby 2.jpg" onclick="openModal(this.src)">
       <img src="IMG/Lobby 3.jpg" onclick="openModal(this.src)">
@@ -198,9 +207,13 @@
     </div>
   </div>
 
+
   <div class="room-section">
     <h3 class="room-title">Hall Utama</h3>
     <div class="gallery">
+        <video controls>
+        <source src="IMG/Main Hall.mp4" type="video/mp4">
+      </video>
       <img src="IMG/Hall Utama 1.jpg" onclick="openModal(this.src)">
       <img src="IMG/Hall Utama 2.jpg" onclick="openModal(this.src)">
       <img src="IMG/Hall Utama 3.jpg" onclick="openModal(this.src)">
@@ -214,6 +227,9 @@
   <div class="room-section">
     <h3 class="room-title">Entrance Kedatangan</h3>
     <div class="gallery">
+        <video controls>
+        <source src="IMG/Entrance Kedatangan.mp4" type="video/mp4">
+      </video>
       <img src="IMG/Entrance Kedatangan 1.jpg" onclick="openModal(this.src)">
       <img src="IMG/Entrance Kedatangan 2.jpg" onclick="openModal(this.src)">
       <img src="IMG/Entrance Kedatangan 3.jpg" onclick="openModal(this.src)">
@@ -223,6 +239,9 @@
   <div class="room-section">
     <h3 class="room-title">Meeting Room VIP</h3>
     <div class="gallery">
+        <video controls>
+        <source src="IMG/Meeting Room VIP.mp4" type="video/mp4">
+      </video>  
       <img src="IMG/Meeting Room VIP 1.jpg" onclick="openModal(this.src)">
       <img src="IMG/Meeting Room VIP 2.jpg" onclick="openModal(this.src)">
       <img src="IMG/Meeting Room VIP 3.jpg" onclick="openModal(this.src)">
@@ -234,6 +253,9 @@
   <div class="room-section">
     <h3 class="room-title">Kamar VIP & Restroom</h3>
     <div class="gallery">
+        <video controls>
+        <source src="IMG/Kamar VIP.mp4" type="video/mp4">
+      </video>
       <img src="IMG/Kamar VIP 1.jpg" onclick="openModal(this.src)">
       <img src="IMG/Kamar VIP 2.jpg" onclick="openModal(this.src)">
       <img src="IMG/Kamar VIP 3.jpg" onclick="openModal(this.src)">
@@ -247,6 +269,9 @@
   <div class="room-section">
     <h3 class="room-title">Meeting Room Kanan</h3>
     <div class="gallery">
+        <video controls>
+        <source src="IMG/Meeting Room Kanan.mp4" type="video/mp4">
+      </video>
       <img src="IMG/Meeting Room Kanan 3.jpg" onclick="openModal(this.src)">
       <img src="IMG/Meeting Room Kanan 1.jpg" onclick="openModal(this.src)">
       <img src="IMG/Meeting Room Kanan 2.jpg" onclick="openModal(this.src)">
@@ -257,6 +282,9 @@
   <div class="room-section">
     <h3 class="room-title">Meeting Room Kiri</h3>
     <div class="gallery">
+        <video controls>
+        <source src="IMG/Meeting Room Kiri.mp4" type="video/mp4">
+      </video>
       <img src="IMG/Meeting Room Kiri 4.jpg" onclick="openModal(this.src)">
       <img src="IMG/Meeting Room Kiri 1.jpg" onclick="openModal(this.src)">
       <img src="IMG/Meeting Room Kiri 2.jpg" onclick="openModal(this.src)">
@@ -268,6 +296,9 @@
   <div class="room-section">
     <h3 class="room-title">Mini ICU</h3>
     <div class="gallery">
+        <video controls>
+        <source src="IMG/Mini ICU.mp4" type="video/mp4">
+      </video>
       <img src="IMG/Mini ICU 3.jpg" onclick="openModal(this.src)">
       <img src="IMG/Mini ICU 1.jpg" onclick="openModal(this.src)">
       <img src="IMG/Mini ICU 2.jpg" onclick="openModal(this.src)">
@@ -277,6 +308,9 @@
   <div class="room-section">
     <h3 class="room-title">Dapur</h3>
     <div class="gallery">
+        <video controls>
+        <source src="IMG/Dapur.mp4" type="video/mp4">
+      </video>
       <img src="IMG/Dapur 3.jpg" onclick="openModal(this.src)">
       <img src="IMG/Dapur 1.jpg" onclick="openModal(this.src)">
       <img src="IMG/Dapur 2.jpg" onclick="openModal(this.src)">
@@ -286,6 +320,9 @@
   <div class="room-section">
     <h3 class="room-title">Waiting Room</h3>
     <div class="gallery">
+        <video controls>
+        <source src="IMG/Waiting Room.mp4" type="video/mp4">
+      </video>
       <img src="IMG/Waiting Room 5.jpg" onclick="openModal(this.src)">
       <img src="IMG/Waiting Room 2.jpg" onclick="openModal(this.src)">
       <img src="IMG/Waiting Room 3.jpg" onclick="openModal(this.src)">
@@ -297,6 +334,9 @@
   <div class="room-section">
     <h3 class="room-title">Test Food Room</h3>
     <div class="gallery">
+        <video controls>
+        <source src="IMG/Test Food Room.mp4" type="video/mp4">
+      </video>
       <img src="IMG/Test Food 1.jpg" onclick="openModal(this.src)">
       <img src="IMG/Test Food 3.jpg" onclick="openModal(this.src)">
       <img src="IMG/Test Food 2.jpg" onclick="openModal(this.src)">
@@ -306,6 +346,9 @@
   <div class="room-section">
     <h3 class="room-title">Mushola</h3>
     <div class="gallery">
+        <video controls>
+        <source src="IMG/Mushola.mp4" type="video/mp4">
+      </video>
       <img src="IMG/Mushola 1.jpg" onclick="openModal(this.src)">
       <img src="IMG/Mushola 2.jpg" onclick="openModal(this.src)">
       <img src="IMG/Mushola 3.jpg" onclick="openModal(this.src)">
@@ -327,7 +370,7 @@
       <img src="IMG/Lorong 2.jpg" onclick="openModal(this.src)">
       <img src="IMG/Lorong 3.jpg" onclick="openModal(this.src)">
     </div>
-  </div>    
+  </div>
 
 </section>
 
@@ -348,6 +391,7 @@
     <i class="fas fa-phone"></i>
     <strong>Contact Person:</strong>
     <div class="person">· <strong>Suharno, S.E</strong> - Koordinator VIP - 0813-9003-4161</div>
+    <div class="person">· <strong>Sabari</strong> - Koordinator VIP - 0813-2690-7070</div>
     <div class="person">· <strong>Tiara Jati Puspitaningrum</strong> - Staff - 0896-6936-7503</div>
     <div class="person">· <strong>Akhdiat Prama Arisena</strong> - Staff - 0896-1763-7361</div>
   </div>
